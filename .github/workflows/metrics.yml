@@ -1,0 +1,43 @@
+name: Metrics
+on:
+  # 每天 UTC 0 点（北京时间早 8 点）自动更新一次
+  schedule: [{cron: "0 0 * * *"}]
+  # 支持在 Actions 页面手动点击运行
+  workflow_dispatch:
+  # 提交到主分支时自动运行
+  push: {branches: ["master", "main"]}
+
+jobs:
+  github-metrics:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: lowlighter/metrics@latest
+        with:
+          # 默认即 ${{ github.token }}，无需额外配置 PAT
+          token: ${{ secrets.GITHUB_TOKEN }}
+          user: ydflow
+
+          template: classic
+          base: header, activity, community, repositories, metadata
+          config_timezone: Asia/Shanghai
+
+          # 语言分析：忽略标记类语言，突出实际技术栈
+          plugin_languages: yes
+          plugin_languages_ignored: html, css, glsl
+          plugin_languages_details: percentage
+          plugin_languages_limit: 8
+
+          # 只展示自有项目，避免 7 个 fork 稀释门面
+          plugin_repositories_featured: >
+            ydflow/cyber-girlfriend-16gb,
+            ydflow/rixu-miniprogram-open,
+            ydflow/jianying-editor-skill-reliable,
+            ydflow/rixu-miniprogram
+
+          # 输出到仓库根目录
+          filename: github-metrics.svg
+          output_action: commit
+          committer_branch: master
+          committer_message: "chore: update metrics"
