@@ -78,6 +78,11 @@
 ### 🕘 最近活动
 
 <!--START_SECTION:activity-->
+1. 🗣 Commented on [#731](https://github.com/alibaba/page-agent/pull/731#issuecomment-5763434884) in [alibaba/page-agent](https://github.com/alibaba/page-agent)
+2. 🗣 Commented on [#730](https://github.com/alibaba/page-agent/pull/730#issuecomment-5763432526) in [alibaba/page-agent](https://github.com/alibaba/page-agent)
+3. ❌ Closed PR [#2755](https://github.com/agentscope-ai/agentscope/pull/2755) in [agentscope-ai/agentscope](https://github.com/agentscope-ai/agentscope)
+4. 🗣 Commented on [#2755](https://github.com/agentscope-ai/agentscope/pull/2755#issuecomment-5763057357) in [agentscope-ai/agentscope](https://github.com/agentscope-ai/agentscope)
+5. 🗣 Commented on [#2755](https://github.com/agentscope-ai/agentscope/pull/2755#issuecomment-5763055184) in [agentscope-ai/agentscope](https://github.com/agentscope-ai/agentscope)
 <!--END_SECTION:activity-->
 
 ---
