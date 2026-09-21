@@ -2,7 +2,7 @@
 
 <img src="https://cdn.jsdelivr.net/gh/ydflow/ydflow@master/banner.svg" alt="ydflow — AI Agent Developer" width="100%">
 
-### AI Agent 开发者 · 编排、工具调用与工作流落地
+### AI Agent 开发者 · 在校生 · 编排、工具调用与工作流落地
 
 `LLM Agent` · `Agent 编排` · `工具调用 / MCP` · `TypeScript` · `Python`
 
@@ -89,8 +89,13 @@
 
 <div align="center">
 
-🌱 正在寻找 **AI Agent / LLM 应用** 方向的工作机会
+🌱 在校大学生，正在寻找 **AI Agent / LLM 应用** 方向的实习机会
 
-<sub>想聊 Agent 编排、Skill 设计或工作流落地，欢迎通过 GitHub 联系。</sub>
+<sub>想聊 Agent 编排、Skill 设计或工作流落地，欢迎联系。</sub>
+
+<br>
+
+<a href="mailto:m5a5@163.com"><img src="https://img.shields.io/badge/Email-m5a5@163.com-D14836?style=flat-square&logo=gmail&logoColor=white" alt="Email"></a>
+<a href="https://github.com/ydflow"><img src="https://img.shields.io/badge/GitHub-ydflow-181717?style=flat-square&logo=github&logoColor=white" alt="GitHub"></a>
 
 </div>
