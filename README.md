@@ -1,6 +1,6 @@
 <div align="center">
 
-<img src="https://cdn.jsdelivr.net/gh/ydflow/ydflow@c6be77bd117595241763096b1e569422802d7a5e/banner.svg" alt="ydflow — AI Agent Developer" width="100%">
+<img src="https://cdn.jsdelivr.net/gh/ydflow/ydflow@master/banner.svg" alt="ydflow — AI Agent Developer" width="100%">
 
 ### AI Agent 开发者 · 在校生 · 编排、工具调用与工作流落地
 
