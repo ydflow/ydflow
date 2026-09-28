@@ -1,8 +1,26 @@
-# ydflow
+<p align="center">
+  <img src="./banner.svg" width="100%" alt="ydflow — AI Agent Engineering · Open Source" />
+</p>
 
-**AI Agent 工程实践** · 工具权限 / 状态一致性 / 上下文可靠性
+<p align="center">
+  <img src="https://img.shields.io/badge/Class%20of-2028-2563eb?style=for-the-badge" alt="2028 届在校生" />
+  <img src="https://img.shields.io/badge/Focus-AI%20Agent-0f766e?style=for-the-badge" alt="专注 AI Agent" />
+  <a href="mailto:m5a5@163.com"><img src="https://img.shields.io/badge/Email-m5a5%40163.com-334155?style=for-the-badge" alt="Email: m5a5@163.com" /></a>
+</p>
 
-我关注 Agent 接入真实工具后容易失效的环节：写操作被误放行、状态文件被截断、多模态目标在重试中失真，以及 MCP 进程无法退出。下面是我提交并已合并到上游的部分修复。
+## 👋 关于我
+
+你好，我是 **ydflow**，一名 **2028 届在校大学生**，目前专注 AI Agent 工程实践。
+
+我关注 Agent 接入真实工具后的可靠性：权限检查能否守住写操作，状态文件能否在失败时保持完整，多模态上下文能否在重试中保真，MCP 服务能否真正退出。我通过可复现的修复、测试和上游 PR 推进这些工作。
+
+## 🛠️ Tech Stack
+
+<p align="center">
+  <img src="https://skillicons.dev/icons?i=ts,js,python,react,nodejs,vite,git,github&amp;theme=dark&amp;perline=8" alt="TypeScript, JavaScript, Python, React, Node.js, Vite, Git, GitHub" />
+</p>
+
+---
 
 ## 上游贡献 · 已合并
 
