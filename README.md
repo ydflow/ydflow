@@ -1,5 +1,9 @@
 <p align="center">
-  <img src="./banner.svg" width="100%" alt="ydflow — AI Agent Engineering · Open Source" />
+  <img src="./profile-banner.png" width="100%" alt="ydflow — AI Agent Engineering · Open Source，海边雏菊插画横幅" />
+</p>
+
+<p align="center">
+  <img src="https://readme-typing-svg.demolab.com?font=Nunito&amp;weight=600&amp;size=22&amp;duration=3600&amp;pause=1400&amp;color=3B91C8&amp;center=true&amp;vCenter=true&amp;width=820&amp;height=52&amp;lines=Dream+of+building+AI+agents+that+can+be+trusted+with+real+work." alt="Dream of building AI agents that can be trusted with real work." />
 </p>
 
 <p align="center">
@@ -14,10 +18,17 @@
 
 我关注 Agent 接入真实工具后的可靠性：权限检查能否守住写操作，状态文件能否在失败时保持完整，多模态上下文能否在重试中保真，MCP 服务能否真正退出。我通过可复现的修复、测试和上游 PR 推进这些工作。
 
-## 🛠️ Tech Stack
+业余时间，我也探索 **AI 数字人**。我希望未来的数字形象能够承载真实人物的故事、记忆片段与表达方式，让这些内容以可交流的形式延续。此外，我也喜欢学习金融领域的知识。
+
+## 🛠️ 技术与创作工具
 
 <p align="center">
   <img src="https://skillicons.dev/icons?i=ts,js,python,react,nodejs,vite,git,github&amp;theme=dark&amp;perline=8" alt="TypeScript, JavaScript, Python, React, Node.js, Vite, Git, GitHub" />
+</p>
+
+<p align="center">
+  <img src="https://img.shields.io/badge/3ds%20Max-3D%20Modeling-148a93?style=for-the-badge" alt="3ds Max · 3D 建模" />
+  <img src="https://img.shields.io/badge/Premiere%20Pro-Video%20Editing-5b3d95?style=for-the-badge" alt="Premiere Pro · 视频剪辑" />
 </p>
 
 ---
