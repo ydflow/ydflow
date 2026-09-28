@@ -1,75 +1,38 @@
-<svg width="1200" height="340" viewBox="0 0 1200 340" fill="none" xmlns="http://www.w3.org/2000/svg">
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="270" viewBox="0 0 1200 270" role="img" aria-labelledby="title description">
+  <title id="title">ydflow — AI Agent Engineering</title>
+  <desc id="description">A blue and teal profile banner with ydflow and the words AI Agent Engineering and Open Source.</desc>
   <defs>
-    <linearGradient id="bg" x1="0" y1="0" x2="1200" y2="340" gradientUnits="userSpaceOnUse">
-      <stop stop-color="#080d13"/>
-      <stop offset="1" stop-color="#0f1a22"/>
+    <linearGradient id="background" x1="0" y1="0" x2="1200" y2="270" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#173a78"/>
+      <stop offset="0.52" stop-color="#2369a7"/>
+      <stop offset="1" stop-color="#239b91"/>
     </linearGradient>
-    <linearGradient id="bar" x1="72" y1="0" x2="1128" y2="0" gradientUnits="userSpaceOnUse">
-      <stop stop-color="#1f6feb"/>
-      <stop offset="1" stop-color="#3fb950"/>
+    <linearGradient id="wave" x1="0" y1="0" x2="1200" y2="0" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#0b1730"/>
+      <stop offset="0.55" stop-color="#132e4d"/>
+      <stop offset="1" stop-color="#0d2736"/>
     </linearGradient>
-    <radialGradient id="glow" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(880 150) rotate(90) scale(140 320)">
-      <stop stop-color="#58a6ff" stop-opacity="0.10"/>
-      <stop offset="1" stop-color="#58a6ff" stop-opacity="0"/>
+    <radialGradient id="light" cx="0" cy="0" r="1" gradientTransform="translate(920 42) rotate(115) scale(310 490)" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#92fff0" stop-opacity="0.22"/>
+      <stop offset="1" stop-color="#92fff0" stop-opacity="0"/>
     </radialGradient>
-    <radialGradient id="glow2" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(300 300) rotate(90) scale(120 280)">
-      <stop stop-color="#3fb950" stop-opacity="0.07"/>
-      <stop offset="1" stop-color="#3fb950" stop-opacity="0"/>
-    </radialGradient>
-    <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
-      <path d="M 0 1 L 9 5 L 0 9 z" fill="#58a6ff"/>
-    </marker>
   </defs>
 
-  <rect width="1200" height="340" fill="url(#bg)"/>
-  <rect width="1200" height="340" fill="url(#glow)"/>
-  <rect width="1200" height="340" fill="url(#glow2)"/>
+  <rect width="1200" height="270" fill="url(#background)"/>
+  <rect width="1200" height="270" fill="url(#light)"/>
 
-  <!-- topology decoration: 3 节点链表示 agent 编排 -->
-  <g opacity="0.85">
-    <circle cx="880" cy="72" r="17" stroke="#223041" stroke-width="1.5" fill="#0d1620"/>
-    <text x="880" y="78" fill="#58a6ff" font-family="ui-sans-serif, system-ui, sans-serif" font-size="15" text-anchor="middle">A</text>
-    <circle cx="1000" cy="126" r="17" stroke="#223041" stroke-width="1.5" fill="#0d1620"/>
-    <text x="1000" y="132" fill="#a371f7" font-family="ui-sans-serif, system-ui, sans-serif" font-size="15" text-anchor="middle">T</text>
-    <circle cx="880" cy="180" r="17" stroke="#223041" stroke-width="1.5" fill="#0d1620"/>
-    <text x="880" y="186" fill="#3fb950" font-family="ui-sans-serif, system-ui, sans-serif" font-size="15" text-anchor="middle">O</text>
-    <path d="M 893 85 L 987 114" stroke="#2b3d4f" stroke-width="1.5" stroke-dasharray="4 4"/>
-    <path d="M 990 140 L 897 168" stroke="#2b3d4f" stroke-width="1.5" stroke-dasharray="4 4"/>
-    <text x="1005" y="52" fill="#4b5f72" font-family="ui-monospace, Menlo, monospace" font-size="11">agent</text>
-    <text x="1122" y="112" fill="#4b5f72" font-family="ui-monospace, Menlo, monospace" font-size="11">tools</text>
-    <text x="998" y="212" fill="#4b5f72" font-family="ui-monospace, Menlo, monospace" font-size="11">observe</text>
+  <g fill="none" stroke="#d4fffc" stroke-width="1.5" opacity="0.15">
+    <path d="M72 57h100l43 38h77"/>
+    <path d="M907 72h72l39 37h112"/>
+    <circle cx="72" cy="57" r="5" fill="#d4fffc"/>
+    <circle cx="292" cy="95" r="5" fill="#d4fffc"/>
+    <circle cx="907" cy="72" r="5" fill="#d4fffc"/>
+    <circle cx="1130" cy="109" r="5" fill="#d4fffc"/>
   </g>
 
-  <!-- terminal chrome -->
-  <rect x="0" y="0" width="1200" height="44" fill="#131d27"/>
-  <circle cx="76" cy="22" r="5.5" fill="#ff5f57"/>
-  <circle cx="96" cy="22" r="5.5" fill="#febc2e"/>
-  <circle cx="116" cy="22" r="5.5" fill="#28c840"/>
-  <text x="600" y="27" fill="#5b6b7c" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="13" text-anchor="middle">ydflow — agent-dev</text>
-  <rect x="0" y="44" width="1200" height="1" fill="#223041"/>
+  <text x="600" y="119" fill="#ffffff" font-family="Segoe UI, Arial, sans-serif" font-size="76" font-weight="700" text-anchor="middle" letter-spacing="-2">ydflow</text>
+  <text x="600" y="161" fill="#f0fffe" font-family="Segoe UI, Arial, sans-serif" font-size="21" font-weight="600" text-anchor="middle" letter-spacing="1.2">AI AGENT ENGINEERING  ·  OPEN SOURCE</text>
 
-  <!-- prompt + name -->
-  <text x="72" y="118" fill="#3fb950" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="20">$ make agent</text>
-
-  <text x="72" y="196" fill="#f0f6fc" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="56" font-weight="700">ydflow</text>
-  <rect x="292" y="150" width="14" height="42" fill="#1f6feb" fill-opacity="0.9"/>
-
-  <text x="74" y="240" fill="#a8b6c6" font-family="ui-sans-serif, system-ui, -apple-system, 'Segoe UI', 'PingFang SC', 'Microsoft YaHei', sans-serif" font-size="19">AI Agent 开发者 — 编排、工具调用与工作流落地</text>
-
-  <!-- workflow run output: 3 个状态点 -->
-  <g transform="translate(74, 272)">
-    <circle cx="7" cy="7" r="6" fill="#3fb950"/>
-    <text x="24" y="12" fill="#93a1b0" font-family="ui-monospace, Menlo, monospace" font-size="13">plan</text>
-    <path d="M 66 7 L 108 7" stroke="#2b3d4f" stroke-width="1.5" marker-end="url(#arrow)"/>
-    <circle cx="137" cy="7" r="6" fill="#58a6ff"/>
-    <text x="154" y="12" fill="#93a1b0" font-family="ui-monospace, Menlo, monospace" font-size="13">tools</text>
-    <path d="M 215 7 L 257 7" stroke="#2b3d4f" stroke-width="1.5" marker-end="url(#arrow)"/>
-    <circle cx="286" cy="7" r="6" fill="#a371f7"/>
-    <text x="303" y="12" fill="#93a1b0" font-family="ui-monospace, Menlo, monospace" font-size="13">memory</text>
-    <path d="M 380 7 L 422 7" stroke="#2b3d4f" stroke-width="1.5" marker-end="url(#arrow)"/>
-    <circle cx="451" cy="7" r="6" fill="#3fb950"/>
-    <text x="468" y="12" fill="#93a1b0" font-family="ui-monospace, Menlo, monospace" font-size="13">done</text>
-  </g>
-
-  <rect x="72" y="306" width="1056" height="3" rx="1.5" fill="url(#bar)"/>
+  <path d="M0 214C178 191 320 224 484 214C657 203 773 181 925 196C1048 208 1128 223 1200 207V270H0V214Z" fill="#142c48" fill-opacity="0.62"/>
+  <path d="M0 238C186 221 349 246 507 244C663 241 760 218 911 229C1043 239 1121 247 1200 232V270H0V238Z" fill="url(#wave)"/>
 </svg>
