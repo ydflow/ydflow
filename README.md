@@ -9,7 +9,7 @@
 <p align="center">
   <img src="https://img.shields.io/badge/Class%20of-2028-2563eb?style=for-the-badge" alt="2028 届在校生" />
   <img src="https://img.shields.io/badge/Focus-AI%20Agent-0f766e?style=for-the-badge" alt="专注 AI Agent" />
-  <a href="mailto:m5a5@163.com"><img src="https://img.shields.io/badge/Email-m5a5%40163.com-334155?style=for-the-badge" alt="Email: m5a5@163.com" /></a>
+  <a href="mailto:m5a5@163.com"><img src="https://img.shields.io/badge/EMAIL-m5a5%40163.com-e85d4a?style=for-the-badge&amp;logo=gmail&amp;logoColor=white&amp;labelColor=b83d35" alt="Email: m5a5@163.com" /></a>
 </p>
 
 ## 👋 关于我
@@ -24,11 +24,8 @@
 
 <p align="center">
   <img src="https://skillicons.dev/icons?i=ts,js,python,react,nodejs,vite,git,github&amp;theme=dark&amp;perline=8" alt="TypeScript, JavaScript, Python, React, Node.js, Vite, Git, GitHub" />
-</p>
-
-<p align="center">
-  <img src="https://img.shields.io/badge/3ds%20Max-3D%20Modeling-148a93?style=for-the-badge" alt="3ds Max · 3D 建模" />
-  <img src="https://img.shields.io/badge/Premiere%20Pro-Video%20Editing-5b3d95?style=for-the-badge" alt="Premiere Pro · 视频剪辑" />
+  <img src="./3ds-max-icon.svg" width="48" height="48" alt="3ds Max · 3D 建模" />
+  <img src="https://skillicons.dev/icons?i=pr&amp;theme=dark" width="48" height="48" alt="Premiere Pro · 视频剪辑" />
 </p>
 
 ---
@@ -48,4 +45,8 @@
 
 ---
 
-[已合并 PR](https://github.com/search?q=type%3Apr+author%3Aydflow+is%3Amerged&type=pullrequests) · [开放中的 PR](https://github.com/search?q=type%3Apr+author%3Aydflow+is%3Aopen&type=pullrequests) · [联系我](mailto:m5a5@163.com)
+<p align="center">
+  <a href="https://github.com/search?q=type%3Apr+author%3Aydflow+is%3Amerged&amp;type=pullrequests"><img src="./footer-merged.svg" width="180" height="50" alt="已合并 PR" /></a>
+  <a href="https://github.com/search?q=type%3Apr+author%3Aydflow+is%3Aopen&amp;type=pullrequests"><img src="./footer-open.svg" width="180" height="50" alt="开放中的 PR" /></a>
+  <a href="mailto:m5a5@163.com"><img src="./footer-email.svg" width="180" height="50" alt="联系我" /></a>
+</p>
