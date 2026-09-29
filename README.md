@@ -39,6 +39,7 @@
 
 ## 项目实践
 
+- **[故障智巡 · Incident Response Agent](https://github.com/ydflow/incident-response-agent)** — 基于 MiniClaw 的故障调查与模拟处置平台；串联日志、指标、链路和变更的只读取证、证据诊断、人工审批与事件回放。目前使用模拟案例，尚未接入生产服务。
 - **[JianYing Editor Skill · Reliable Edition](https://github.com/ydflow/jianying-editor-skill-reliable)** — 基于 [jianying-editor-skill](https://github.com/luoluoluo22/jianying-editor-skill) 的二次开发；加入草稿备份、只读诊断、剪映版本预检和真实 MP4 转码。
 - **[AI Digital Human](https://github.com/ydflow/cyber-girlfriend-16gb)** — 用 React、Node.js 和 Python 串联 ASR → LLM → TTS → 本地口型动画；运行需自备模型与服务凭据。
 - **[日序 · 每天都有安排](https://github.com/ydflow/rixu-miniprogram-open)** — 本地优先的微信原生 TypeScript 小程序，可选 CloudBase 同步；仍在开发和验收中。
