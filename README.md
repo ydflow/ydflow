@@ -54,7 +54,7 @@
 ---
 
 <p align="center">
-  <a href="https://github.com/search?q=type%3Apr+author%3Aydflow+is%3Amerged&amp;type=pullrequests"><img src="./footer-merged-v2.svg" width="188" height="60" alt="已合并 PR" /></a>
-  <a href="https://github.com/search?q=type%3Apr+author%3Aydflow+is%3Aopen&amp;type=pullrequests"><img src="./footer-open-v2.svg" width="188" height="60" alt="开放中的 PR" /></a>
-  <a href="mailto:m5a5@163.com"><img src="./footer-email-v2.svg" width="188" height="60" alt="联系我" /></a>
+  <a href="https://github.com/search?q=type%3Apr+author%3Aydflow+is%3Amerged&amp;type=pullrequests"><img src="./footer-merged-v3.svg" width="188" height="56" alt="已合并 PR" /></a>
+  <a href="https://github.com/search?q=type%3Apr+author%3Aydflow+is%3Aopen&amp;type=pullrequests"><img src="./footer-open-v3.svg" width="188" height="56" alt="开放中的 PR" /></a>
+  <a href="mailto:m5a5@163.com"><img src="./footer-email-v3.svg" width="188" height="56" alt="联系我" /></a>
 </p>
