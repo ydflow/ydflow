@@ -14,11 +14,11 @@
 
 ## 👋 关于我
 
-你好，我是 **ydflow**，一名 **2028 届在校大学生**，目前专注 AI Agent 工程实践。
+你好，我是 **ydflow**，一名 **2028 届本科生**，目前正在寻找 **AI Agent 开发实习**。
 
-我关注 Agent 接入真实工具后的可靠性：权限检查能否守住写操作，状态文件能否在失败时保持完整，多模态上下文能否在重试中保真，MCP 服务能否真正退出。我通过可复现的修复、测试和上游 PR 推进这些工作。
+我关注 Agent 如何在真实工具与长任务中可靠工作：工具调用是否受权限约束，状态能否恢复，结论能否追溯证据，失败能否通过 Trace / Eval 被发现和复现。我在个人项目与已合并的上游 PR 中持续验证这些问题。
 
-业余时间，我也探索 **AI 数字人**。我希望未来的数字形象能够承载真实人物的故事、记忆片段与表达方式，让这些内容以可交流的形式延续。此外，我也喜欢学习金融领域的知识，近期在着手一款面向股票投资研究场景的AI Native Agent工作台
+我也探索 **AI 数字人**的交互与记忆表达，并将金融研究兴趣落实在本地 AI 投资研究工作台「研迹」。欢迎通过 [邮箱](mailto:m5a5@163.com) 交流实习与开源合作。
 
 ## 🛠️ 技术与创作工具
 
@@ -28,26 +28,30 @@
   <img src="https://skillicons.dev/icons?i=pr&amp;theme=dark" width="48" height="48" alt="Premiere Pro · 视频剪辑" />
 </p>
 
+**Agent 工程** · MCP / Tool Calling · Context / Memory · Human-in-the-loop · Trace / Eval<br />
+**应用开发** · Python / FastAPI / Pydantic / SQLite · TypeScript / React / Node.js
+
 ---
 
 ## 上游贡献 · 已合并
 
-- **工具权限 · [AgentScope #2883](https://github.com/agentscope-ai/agentscope/pull/2883)** — 修正 `git branch -D` 等写操作被判为只读、绕过权限流程的问题；未知参数回到正常的权限判断。
-- **状态一致性 · [teamai-cli #855](https://github.com/Tencent/teamai-cli/pull/855) / [#841](https://github.com/Tencent/teamai-cli/pull/841)** — 原子写入状态文件与搜索索引；串行化事件日志的追加和压缩，避免截断与并发丢失。
-- **上下文与记忆 · [AgentScope #2860](https://github.com/agentscope-ai/agentscope/pull/2860) / [OpenViking #5312](https://github.com/volcengine/OpenViking/pull/5312)** — 在验证重试中保留多模态目标结构；让排除子树的配置真正进入记忆召回请求。
-- **MCP 生命周期 · [Shep #883](https://github.com/shep-ai/shep/pull/883)** — 等待服务进程实际退出，优雅关闭超时后升级终止。
+- **执行边界 · [AgentScope #2883](https://github.com/agentscope-ai/agentscope/pull/2883) / [TeamAI #951](https://github.com/Tencent/teamai-cli/pull/951)** — 收紧 Bash 只读判定，阻止可写 Git 命令绕过权限流程；让 `update --dry-run` 只检查版本，不安装或写入检查状态。
+- **并发持久化 · [TeamAI #841](https://github.com/Tencent/teamai-cli/pull/841) / [#855](https://github.com/Tencent/teamai-cli/pull/855) / [#961](https://github.com/Tencent/teamai-cli/pull/961)** — 为事件日志、状态与索引、跨进程会话日志补上锁协调和原子替换，处理竞争覆盖与截断读取。
+- **知识召回 · [TeamAI #891](https://github.com/Tencent/teamai-cli/pull/891) / [#902](https://github.com/Tencent/teamai-cli/pull/902) / [OpenViking #5312](https://github.com/volcengine/OpenViking/pull/5312)** — 统一多来源召回的排序尺度、隔离知识域 IDF 统计，并接通 DSH 插件的召回子树排除配置。
+- **Agent 运行时 · [AgentScope #2860](https://github.com/agentscope-ai/agentscope/pull/2860) / [Shep #883](https://github.com/shep-ai/shep/pull/883)** — 验证重试时保留多模态目标块；MCP 服务关闭时等待退出、超时升级终止，并处理 Windows 进程树。
 
 ## 项目实践
 
-- **[故障智巡 · Incident Response Agent](https://github.com/ydflow/incident-response-agent)** — 面向线上服务故障的 Agent 调查与模拟处置平台；将日志、指标、链路和变更整理为可追溯证据，串联根因分析、风险策略、人工审批与事件回放，并用模拟案例和确定性测试验证流程。
-- **[JianYing Editor Skill · Reliable Edition](https://github.com/ydflow/jianying-editor-skill-reliable)** — 基于 [jianying-editor-skill](https://github.com/luoluoluo22/jianying-editor-skill) 的二次开发；加入草稿备份、只读诊断、剪映版本预检和真实 MP4 转码。
-- **[AI Digital Human](https://github.com/ydflow/cyber-girlfriend-16gb)** — 用 React、Node.js 和 Python 串联 ASR → LLM → TTS → 本地口型动画；运行需自备模型与服务凭据。
-- **[日序 · 每天都有安排](https://github.com/ydflow/rixu-miniprogram-open)** — 本地优先的微信原生 TypeScript 小程序，可选 CloudBase 同步；仍在开发和验收中。
+- **[研迹 · ResearchTrail](https://github.com/ydflow/research-trail)** — 已发布 Windows v1.0.0 的本地 AI 投资研究工作台；串联资料采集、可追溯报告、论点复审与 Today 简报，用离线案例回归 Agent 流程。
+- **[故障智巡 · Incident Response Agent](https://github.com/ydflow/incident-response-agent)** — 线上服务故障调查与模拟处置平台；在本地受控演示中只读取证、引用证据诊断，通过审批门控与事件回放记录决策；尚未接入生产处置。
+- **[剪映自动化 Skill · Reliable Edition](https://github.com/ydflow/jianying-editor-skill-reliable)** — 在 [上游项目](https://github.com/luoluoluo22/jianying-editor-skill) 基础上的可靠性增强：草稿备份、只读诊断、版本预检、媒体保真与真实 MP4 转码。
+- **[AI Digital Human](https://github.com/ydflow/cyber-girlfriend-16gb)** — 支持自定义角色的逐轮语音数字人原型；串联云端语音与对话服务、本地口型和表情视频生成。
+- **[日序 · 每天都有安排](https://github.com/ydflow/rixu-miniprogram-open)** — 开发中的本地优先微信原生 TypeScript 日程小程序；支持事项、日历与专注，可选 CloudBase 同步。
 
 ---
 
 <p align="center">
-  <a href="https://github.com/search?q=type%3Apr+author%3Aydflow+is%3Amerged&amp;type=pullrequests"><img src="./footer-merged.svg" width="180" height="50" alt="已合并 PR" /></a>
-  <a href="https://github.com/search?q=type%3Apr+author%3Aydflow+is%3Aopen&amp;type=pullrequests"><img src="./footer-open.svg" width="180" height="50" alt="开放中的 PR" /></a>
-  <a href="mailto:m5a5@163.com"><img src="./footer-email.svg" width="180" height="50" alt="联系我" /></a>
+  <a href="https://github.com/search?q=type%3Apr+author%3Aydflow+is%3Amerged&amp;type=pullrequests"><img src="./footer-merged.svg" width="188" height="60" alt="已合并 PR" /></a>
+  <a href="https://github.com/search?q=type%3Apr+author%3Aydflow+is%3Aopen&amp;type=pullrequests"><img src="./footer-open.svg" width="188" height="60" alt="开放中的 PR" /></a>
+  <a href="mailto:m5a5@163.com"><img src="./footer-email.svg" width="188" height="60" alt="联系我" /></a>
 </p>

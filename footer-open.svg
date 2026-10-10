@@ -1,11 +1,16 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="180" height="50" viewBox="0 0 180 50" role="img" aria-labelledby="title">
+<svg xmlns="http://www.w3.org/2000/svg" width="188" height="60" viewBox="0 0 188 60" role="img" aria-labelledby="title">
   <title id="title">开放中的 PR</title>
-  <defs><linearGradient id="bg" x2="1" y2="1"><stop stop-color="#153a3d"/><stop offset="1" stop-color="#142b30"/></linearGradient></defs>
-  <rect x="1" y="1" width="178" height="48" rx="12" fill="url(#bg)" stroke="#269486" stroke-width="1.5"/>
-  <rect x="1" y="11" width="3" height="28" rx="1.5" fill="#5fe0c5"/>
-  <circle cx="27" cy="25" r="13" fill="#0f766e"/>
-  <circle cx="22" cy="19" r="2" fill="#fff"/><circle cx="32" cy="19" r="2" fill="#fff"/><circle cx="27" cy="32" r="2" fill="#fff"/>
-  <path d="M22 21v5l5 4m5-9v5l-5 4" fill="none" stroke="#fff" stroke-width="1.6" stroke-linecap="round"/>
-  <text x="51" y="31" fill="#f2fffc" font-family="Arial,'Microsoft YaHei',sans-serif" font-size="15" font-weight="700">开放中的 PR</text>
-  <path d="M151 25h12m-5-5 5 5-5 5" fill="none" stroke="#78e2ce" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+  <defs>
+    <linearGradient id="surface" x2="1" y2="1"><stop stop-color="#142838"/><stop offset="1" stop-color="#101a27"/></linearGradient>
+    <linearGradient id="edge" x2="1"><stop stop-color="#55aef0"/><stop offset="1" stop-color="#3fd4d0"/></linearGradient>
+  </defs>
+  <rect x="1" y="1" width="186" height="58" rx="10" fill="url(#surface)" stroke="#36576d"/>
+  <path d="M13 1h162" stroke="url(#edge)" stroke-width="2"/>
+  <g fill="none" stroke="#8bceef" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M21 22v16m2-7h7c5 0 9-3 9-9"/>
+    <circle cx="21" cy="19" r="2.5" fill="#142838"/><circle cx="21" cy="40" r="2.5" fill="#142838"/><circle cx="39" cy="19" r="2.5" fill="#142838"/>
+  </g>
+  <text x="55" y="22" fill="#91b4c8" font-family="Consolas,'Microsoft YaHei',sans-serif" font-size="10" letter-spacing="1.1">02 / ACTIVE</text>
+  <text x="55" y="43" fill="#f4f9fc" font-family="'Microsoft YaHei',Arial,sans-serif" font-size="15" font-weight="700">开放中的 PR</text>
+  <path d="m166 26 5 4-5 4" fill="none" stroke="#75c7e8" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
 </svg>
