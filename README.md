@@ -23,7 +23,8 @@
 ## 🛠️ 技术与创作工具
 
 <p align="center">
-  <img src="https://skillicons.dev/icons?i=ts,js,python,react,nodejs,vite,git,github&amp;theme=dark&amp;perline=8" alt="TypeScript, JavaScript, Python, React, Node.js, Vite, Git, GitHub" />
+  <img src="https://skillicons.dev/icons?i=ts,js,python,react&amp;theme=dark&amp;perline=4" alt="TypeScript, JavaScript, Python, React" />
+  <img src="https://skillicons.dev/icons?i=nodejs,vite,git,github&amp;theme=dark&amp;perline=4" alt="Node.js, Vite, Git, GitHub" />
 </p>
 <p align="center">
   <img src="./tech-icons/FastAPI.svg" width="48" height="48" alt="FastAPI" title="FastAPI" />
