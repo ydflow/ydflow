@@ -22,14 +22,26 @@
 
 ## 🛠️ 技术与创作工具
 
-<p align="center">
-  <img src="https://skillicons.dev/icons?i=ts,js,python,react,nodejs,vite,git,github&amp;theme=dark&amp;perline=8" alt="TypeScript, JavaScript, Python, React, Node.js, Vite, Git, GitHub" />
-  <img src="./3ds-max-icon.svg" width="48" height="48" alt="3ds Max · 3D 建模" />
-  <img src="https://skillicons.dev/icons?i=pr&amp;theme=dark" width="48" height="48" alt="Premiere Pro · 视频剪辑" />
-</p>
-
-**Agent 工程** · MCP / Tool Calling · Context / Memory · Human-in-the-loop · Trace / Eval<br />
-**应用开发** · Python / FastAPI / Pydantic / SQLite · TypeScript / React / Node.js
+<table align="center">
+  <tr>
+    <th align="center" width="72%">Agent 与应用开发</th>
+    <th align="center" width="28%">建模与剪辑</th>
+  </tr>
+  <tr>
+    <td align="center">
+      <img src="./tech-icons/Python-Dark.svg" width="46" height="46" alt="Python" title="Python" />
+      <img src="./tech-icons/FastAPI.svg" width="46" height="46" alt="FastAPI" title="FastAPI" />
+      <img src="./tech-icons/SQLite.svg" width="46" height="46" alt="SQLite" title="SQLite" />
+      <img src="./tech-icons/TypeScript.svg" width="46" height="46" alt="TypeScript" title="TypeScript" />
+      <img src="./tech-icons/React-Dark.svg" width="46" height="46" alt="React" title="React" />
+      <img src="./tech-icons/Electron.svg" width="46" height="46" alt="Electron" title="Electron" />
+    </td>
+    <td align="center">
+      <img src="./3ds-max-icon.svg" width="42" height="42" alt="3ds Max" title="3ds Max" />
+      <img src="./tech-icons/Premiere.svg" width="42" height="42" alt="Premiere Pro" title="Premiere Pro" />
+    </td>
+  </tr>
+</table>
 
 ---
 
