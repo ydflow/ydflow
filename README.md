@@ -51,6 +51,11 @@
 - **[AI Digital Human](https://github.com/ydflow/cyber-girlfriend-16gb)** — 支持自定义角色的逐轮语音数字人原型；串联云端语音与对话服务、本地口型和表情视频生成。
 - **[日序 · 每天都有安排](https://github.com/ydflow/rixu-miniprogram-open)** — 开发中的本地优先微信原生 TypeScript 日程小程序；支持事项、日历与专注，可选 CloudBase 同步。
 
+## 最近活动
+
+<!--START_SECTION:activity-->
+<!--END_SECTION:activity-->
+
 ---
 
 <p align="center">
