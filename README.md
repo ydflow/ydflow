@@ -54,6 +54,11 @@
 ## 最近活动
 
 <!--START_SECTION:activity-->
+1. 🎉 Merged PR [#34](https://github.com/ydflow/research-trail/pull/34) in [ydflow/research-trail](https://github.com/ydflow/research-trail)
+2. 💪 Opened PR [#34](https://github.com/ydflow/research-trail/pull/34) in [ydflow/research-trail](https://github.com/ydflow/research-trail)
+3. 🎉 Merged PR [#33](https://github.com/ydflow/research-trail/pull/33) in [ydflow/research-trail](https://github.com/ydflow/research-trail)
+4. 💪 Opened PR [#33](https://github.com/ydflow/research-trail/pull/33) in [ydflow/research-trail](https://github.com/ydflow/research-trail)
+5. 🎉 Merged PR [#1035](https://github.com/Tencent/teamai-cli/pull/1035) in [Tencent/teamai-cli](https://github.com/Tencent/teamai-cli)
 <!--END_SECTION:activity-->
 
 ---
