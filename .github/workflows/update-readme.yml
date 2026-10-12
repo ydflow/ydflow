@@ -9,14 +9,37 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
+    concurrency:
+      group: profile-repository-activity
+      cancel-in-progress: false
     permissions:
       contents: write
     steps:
       - uses: actions/checkout@v4
-      # 用上游 action，不依赖个人 fork
-      - uses: jamesgeorge007/github-activity-readme@master
+        with:
+          ref: master
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Validate repository activity updater
+        run: node --test scripts/repository-activity.test.mjs
+      - name: Summarize lifetime repository contributions
         env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GH_USERNAME: ydflow
+        run: node scripts/update-repository-activity.mjs
+      - name: Commit repository contribution summary
+        run: |
+          if git diff --quiet -- README.md; then
+            echo "No repository contribution changes"
+            exit 0
+          fi
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add -- README.md
+          git commit -m 'chore: update repository contribution summary'
+          git pull --rebase origin master
+          git push origin HEAD:master
 
       # 活动区写入后一并清除 banner CDN 缓存，保证推送即生效
       - name: Purge jsDelivr CDN cache
