@@ -36,6 +36,36 @@
 
 ---
 
+## 近期活动
+
+<!--START_SECTION:activity-->
+<picture>
+  <source media="(prefers-reduced-motion: reduce) and (max-width: 640px)" srcset="./assets/activity/mobile.png?v=53a75146b68a">
+  <source media="(prefers-reduced-motion: reduce)" srcset="./assets/activity/desktop.png?v=53a75146b68a">
+  <source media="(max-width: 640px)" srcset="./assets/activity/mobile.gif?v=53a75146b68a">
+  <img src="./assets/activity/desktop.gif?v=53a75146b68a" width="960" alt="近期活动：7 个公开仓库的累计代码提交、发起 PR 与已合并 PR；详细记录见下方可展开的贡献明细。">
+</picture>
+
+<details>
+<summary>查看贡献明细与记录 ↗</summary>
+
+最近参与的公开仓库 · 累计贡献
+
+| 仓库 | 代码提交 | 发起 PR | 已合并 PR |
+| :--- | ---: | ---: | ---: |
+| [ydflow/research-trail](https://github.com/ydflow/research-trail) | [201](https://github.com/search?q=author%3Aydflow%20is%3Apublic%20repo%3Aydflow%2Fresearch-trail&type=commits) | [34](https://github.com/search?q=author%3Aydflow%20is%3Apublic%20repo%3Aydflow%2Fresearch-trail%20is%3Apr&type=pullrequests) | [34](https://github.com/search?q=author%3Aydflow%20is%3Apublic%20repo%3Aydflow%2Fresearch-trail%20is%3Apr%20is%3Amerged&type=pullrequests) |
+| [Tencent/teamai-cli](https://github.com/Tencent/teamai-cli) | [34](https://github.com/search?q=author%3Aydflow%20is%3Apublic%20repo%3ATencent%2Fteamai-cli&type=commits) | [37](https://github.com/search?q=author%3Aydflow%20is%3Apublic%20repo%3ATencent%2Fteamai-cli%20is%3Apr&type=pullrequests) | [34](https://github.com/search?q=author%3Aydflow%20is%3Apublic%20repo%3ATencent%2Fteamai-cli%20is%3Apr%20is%3Amerged&type=pullrequests) |
+| [ydflow/incident-response-agent](https://github.com/ydflow/incident-response-agent) | [39](https://github.com/search?q=author%3Aydflow%20is%3Apublic%20repo%3Aydflow%2Fincident-response-agent&type=commits) | [9](https://github.com/search?q=author%3Aydflow%20is%3Apublic%20repo%3Aydflow%2Fincident-response-agent%20is%3Apr&type=pullrequests) | [9](https://github.com/search?q=author%3Aydflow%20is%3Apublic%20repo%3Aydflow%2Fincident-response-agent%20is%3Apr%20is%3Amerged&type=pullrequests) |
+| [ydflow/cyber-girlfriend-16gb](https://github.com/ydflow/cyber-girlfriend-16gb) | [4](https://github.com/search?q=author%3Aydflow%20is%3Apublic%20repo%3Aydflow%2Fcyber-girlfriend-16gb&type=commits) | [0](https://github.com/search?q=author%3Aydflow%20is%3Apublic%20repo%3Aydflow%2Fcyber-girlfriend-16gb%20is%3Apr&type=pullrequests) | [0](https://github.com/search?q=author%3Aydflow%20is%3Apublic%20repo%3Aydflow%2Fcyber-girlfriend-16gb%20is%3Apr%20is%3Amerged&type=pullrequests) |
+| [alibaba/open-code-review](https://github.com/alibaba/open-code-review) | [2](https://github.com/search?q=author%3Aydflow%20is%3Apublic%20repo%3Aalibaba%2Fopen-code-review&type=commits) | [11](https://github.com/search?q=author%3Aydflow%20is%3Apublic%20repo%3Aalibaba%2Fopen-code-review%20is%3Apr&type=pullrequests) | [2](https://github.com/search?q=author%3Aydflow%20is%3Apublic%20repo%3Aalibaba%2Fopen-code-review%20is%3Apr%20is%3Amerged&type=pullrequests) |
+| [agentscope-ai/agentscope](https://github.com/agentscope-ai/agentscope) | [6](https://github.com/search?q=author%3Aydflow%20is%3Apublic%20repo%3Aagentscope-ai%2Fagentscope&type=commits) | [12](https://github.com/search?q=author%3Aydflow%20is%3Apublic%20repo%3Aagentscope-ai%2Fagentscope%20is%3Apr&type=pullrequests) | [6](https://github.com/search?q=author%3Aydflow%20is%3Apublic%20repo%3Aagentscope-ai%2Fagentscope%20is%3Apr%20is%3Amerged&type=pullrequests) |
+| [volcengine/OpenViking](https://github.com/volcengine/OpenViking) | [1](https://github.com/search?q=author%3Aydflow%20is%3Apublic%20repo%3Avolcengine%2FOpenViking&type=commits) | [4](https://github.com/search?q=author%3Aydflow%20is%3Apublic%20repo%3Avolcengine%2FOpenViking%20is%3Apr&type=pullrequests) | [1](https://github.com/search?q=author%3Aydflow%20is%3Apublic%20repo%3Avolcengine%2FOpenViking%20is%3Apr%20is%3Amerged&type=pullrequests) |
+
+<sub>均为本人累计贡献，不限时间；代码提交统计默认分支，PR 分别统计发起数与已合并数。不含本主页仓库，点击数字可查看记录。</sub>
+
+</details>
+<!--END_SECTION:activity-->
+
 ## 上游贡献 · 已合并
 
 - **执行边界 · [AgentScope #2883](https://github.com/agentscope-ai/agentscope/pull/2883) / [TeamAI #951](https://github.com/Tencent/teamai-cli/pull/951)** — 收紧 Bash 只读判定，阻止可写 Git 命令绕过权限流程；让 `update --dry-run` 只检查版本，不安装或写入检查状态。
@@ -50,25 +80,6 @@
 - **[剪映自动化 Skill · Reliable Edition](https://github.com/ydflow/jianying-editor-skill-reliable)** — 在 [上游项目](https://github.com/luoluoluo22/jianying-editor-skill) 基础上的可靠性增强：草稿备份、只读诊断、版本预检、媒体保真与真实 MP4 转码。
 - **[AI Digital Human](https://github.com/ydflow/cyber-girlfriend-16gb)** — 支持自定义角色的逐轮语音数字人原型；串联云端语音与对话服务、本地口型和表情视频生成。
 - **[日序 · 每天都有安排](https://github.com/ydflow/rixu-miniprogram-open)** — 开发中的本地优先微信原生 TypeScript 日程小程序；支持事项、日历与专注，可选 CloudBase 同步。
-
-## 近期活动
-
-<!--START_SECTION:activity-->
-最近参与的公开仓库 · 累计贡献
-
-| 仓库 | 代码提交 | 发起 PR | 已合并 PR |
-| :--- | ---: | ---: | ---: |
-| [ydflow/research-trail](https://github.com/ydflow/research-trail) | [201](https://github.com/search?q=author%3Aydflow%20is%3Apublic%20repo%3Aydflow%2Fresearch-trail&type=commits) | [34](https://github.com/search?q=author%3Aydflow%20is%3Apublic%20repo%3Aydflow%2Fresearch-trail%20is%3Apr&type=pullrequests) | [34](https://github.com/search?q=author%3Aydflow%20is%3Apublic%20repo%3Aydflow%2Fresearch-trail%20is%3Apr%20is%3Amerged&type=pullrequests) |
-| [Tencent/teamai-cli](https://github.com/Tencent/teamai-cli) | [34](https://github.com/search?q=author%3Aydflow%20is%3Apublic%20repo%3ATencent%2Fteamai-cli&type=commits) | [37](https://github.com/search?q=author%3Aydflow%20is%3Apublic%20repo%3ATencent%2Fteamai-cli%20is%3Apr&type=pullrequests) | [34](https://github.com/search?q=author%3Aydflow%20is%3Apublic%20repo%3ATencent%2Fteamai-cli%20is%3Apr%20is%3Amerged&type=pullrequests) |
-| [ydflow/incident-response-agent](https://github.com/ydflow/incident-response-agent) | [39](https://github.com/search?q=author%3Aydflow%20is%3Apublic%20repo%3Aydflow%2Fincident-response-agent&type=commits) | [9](https://github.com/search?q=author%3Aydflow%20is%3Apublic%20repo%3Aydflow%2Fincident-response-agent%20is%3Apr&type=pullrequests) | [9](https://github.com/search?q=author%3Aydflow%20is%3Apublic%20repo%3Aydflow%2Fincident-response-agent%20is%3Apr%20is%3Amerged&type=pullrequests) |
-| [qinshihu/itops-agent-platform](https://github.com/qinshihu/itops-agent-platform) | [0](https://github.com/search?q=author%3Aydflow%20is%3Apublic%20repo%3Aqinshihu%2Fitops-agent-platform&type=commits) | [5](https://github.com/search?q=author%3Aydflow%20is%3Apublic%20repo%3Aqinshihu%2Fitops-agent-platform%20is%3Apr&type=pullrequests) | [0](https://github.com/search?q=author%3Aydflow%20is%3Apublic%20repo%3Aqinshihu%2Fitops-agent-platform%20is%3Apr%20is%3Amerged&type=pullrequests) |
-| [ydflow/cyber-girlfriend-16gb](https://github.com/ydflow/cyber-girlfriend-16gb) | [4](https://github.com/search?q=author%3Aydflow%20is%3Apublic%20repo%3Aydflow%2Fcyber-girlfriend-16gb&type=commits) | [0](https://github.com/search?q=author%3Aydflow%20is%3Apublic%20repo%3Aydflow%2Fcyber-girlfriend-16gb%20is%3Apr&type=pullrequests) | [0](https://github.com/search?q=author%3Aydflow%20is%3Apublic%20repo%3Aydflow%2Fcyber-girlfriend-16gb%20is%3Apr%20is%3Amerged&type=pullrequests) |
-| [alibaba/open-code-review](https://github.com/alibaba/open-code-review) | [2](https://github.com/search?q=author%3Aydflow%20is%3Apublic%20repo%3Aalibaba%2Fopen-code-review&type=commits) | [11](https://github.com/search?q=author%3Aydflow%20is%3Apublic%20repo%3Aalibaba%2Fopen-code-review%20is%3Apr&type=pullrequests) | [2](https://github.com/search?q=author%3Aydflow%20is%3Apublic%20repo%3Aalibaba%2Fopen-code-review%20is%3Apr%20is%3Amerged&type=pullrequests) |
-| [agentscope-ai/agentscope](https://github.com/agentscope-ai/agentscope) | [6](https://github.com/search?q=author%3Aydflow%20is%3Apublic%20repo%3Aagentscope-ai%2Fagentscope&type=commits) | [12](https://github.com/search?q=author%3Aydflow%20is%3Apublic%20repo%3Aagentscope-ai%2Fagentscope%20is%3Apr&type=pullrequests) | [6](https://github.com/search?q=author%3Aydflow%20is%3Apublic%20repo%3Aagentscope-ai%2Fagentscope%20is%3Apr%20is%3Amerged&type=pullrequests) |
-| [volcengine/OpenViking](https://github.com/volcengine/OpenViking) | [1](https://github.com/search?q=author%3Aydflow%20is%3Apublic%20repo%3Avolcengine%2FOpenViking&type=commits) | [4](https://github.com/search?q=author%3Aydflow%20is%3Apublic%20repo%3Avolcengine%2FOpenViking%20is%3Apr&type=pullrequests) | [1](https://github.com/search?q=author%3Aydflow%20is%3Apublic%20repo%3Avolcengine%2FOpenViking%20is%3Apr%20is%3Amerged&type=pullrequests) |
-
-<sub>均为本人累计贡献，不限时间；代码提交统计默认分支，PR 分别统计发起数与已合并数。不含本主页仓库，点击数字可查看记录。</sub>
-<!--END_SECTION:activity-->
 
 ---
 

@@ -1,0 +1,44 @@
+[
+  {
+    "repository": "ydflow/research-trail",
+    "commits": 201,
+    "opened": 34,
+    "merged": 34
+  },
+  {
+    "repository": "Tencent/teamai-cli",
+    "commits": 34,
+    "opened": 37,
+    "merged": 34
+  },
+  {
+    "repository": "ydflow/incident-response-agent",
+    "commits": 39,
+    "opened": 9,
+    "merged": 9
+  },
+  {
+    "repository": "ydflow/cyber-girlfriend-16gb",
+    "commits": 4,
+    "opened": 0,
+    "merged": 0
+  },
+  {
+    "repository": "alibaba/open-code-review",
+    "commits": 2,
+    "opened": 11,
+    "merged": 2
+  },
+  {
+    "repository": "agentscope-ai/agentscope",
+    "commits": 6,
+    "opened": 12,
+    "merged": 6
+  },
+  {
+    "repository": "volcengine/OpenViking",
+    "commits": 1,
+    "opened": 4,
+    "merged": 1
+  }
+]

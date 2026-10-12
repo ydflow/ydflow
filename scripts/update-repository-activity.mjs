@@ -1,7 +1,8 @@
 import { execFileSync } from 'node:child_process';
-import { readFileSync, writeFileSync } from 'node:fs';
+import { readFileSync, writeFileSync, existsSync } from 'node:fs';
 import { pathToFileURL } from 'node:url';
 import { setTimeout as delay } from 'node:timers/promises';
+import { renderActivity, activityArtworkCurrent, renderSignature } from './render-activity.mjs';
 
 const START = '<!--START_SECTION:activity-->';
 const END = '<!--END_SECTION:activity-->';
@@ -56,7 +57,8 @@ function streamDate(item, kind) {
   return kind === 'merged' ? Date.parse(item.updated_at) : contributionDate(item, kind);
 }
 
-export async function recentRepositories(search, username, limit = 8, excluded = `${username}/${username}`) {
+export async function recentRepositories(search, username, limit = 7, excluded = `${username}/${username}`) {
+  const excludedRepositories = new Set([excluded, 'qinshihu/itops-agent-platform'].map(name => name.toLowerCase()));
   const candidates = new Map();
   const commits = new Map();
   const query = queries(username);
@@ -84,7 +86,7 @@ export async function recentRepositories(search, username, limit = 8, excluded =
       for (const item of result.items) {
         const repository = repositoryOf(item, feed.kind);
         const when = contributionDate(item, feed.kind);
-        if (repository.toLowerCase() === excluded.toLowerCase()) continue;
+        if (excludedRepositories.has(repository.toLowerCase())) continue;
         if (!Number.isFinite(when)) throw new Error('Missing contribution date');
         const collection = feed.kind === 'commits' ? commits : candidates;
         collection.set(repository, Math.max(collection.get(repository) ?? 0, when));
@@ -146,6 +148,26 @@ export function replaceActivity(readme, content) {
   return readme.slice(0, start) + newline + content.replace(/\r?\n/g, newline) + newline + readme.slice(end);
 }
 
+export function renderActivityMarkdown(rows, username, version = '') {
+  if (rows.some(row => row.repository.toLowerCase() === 'qinshihu/itops-agent-platform')) throw new Error('ITOps is excluded from profile activity');
+  const revision = version ? `?v=${encodeURIComponent(version)}` : '';
+  return [
+    '<picture>',
+    `  <source media="(prefers-reduced-motion: reduce) and (max-width: 640px)" srcset="./assets/activity/mobile.png${revision}">`,
+    `  <source media="(prefers-reduced-motion: reduce)" srcset="./assets/activity/desktop.png${revision}">`,
+    `  <source media="(max-width: 640px)" srcset="./assets/activity/mobile.gif${revision}">`,
+    `  <img src="./assets/activity/desktop.gif${revision}" width="960" alt="近期活动：${rows.length} 个公开仓库的累计代码提交、发起 PR 与已合并 PR；详细记录见下方可展开的贡献明细。">`,
+    '</picture>',
+    '',
+    '<details>',
+    '<summary>查看贡献明细与记录 ↗</summary>',
+    '',
+    renderTable(rows, username),
+    '',
+    '</details>',
+  ].join('\n');
+}
+
 async function main() {
   const username = process.env.GH_USERNAME || 'ydflow';
   const target = 'README.md';
@@ -156,7 +178,12 @@ async function main() {
   const repositories = await recentRepositories(search, username);
   console.log(`Fetching lifetime contributions for ${repositories.join(', ')}`);
   const rows = await repositoryTotals(search, username, repositories);
-  const updated = replaceActivity(original, renderTable(rows, username));
+  const dataPath = 'assets/activity/data.json';
+  const serialized = JSON.stringify(rows, null, 2) + '\n';
+  const changed = !existsSync(dataPath) || readFileSync(dataPath, 'utf8') !== serialized;
+  if (changed || !activityArtworkCurrent(rows)) renderActivity(rows);
+  if (changed) writeFileSync(dataPath, serialized, 'utf8');
+  const updated = replaceActivity(original, renderActivityMarkdown(rows, username, renderSignature(rows).slice(0, 12)));
   if (updated !== original) writeFileSync(target, updated, 'utf8');
   console.log(JSON.stringify(rows, null, 2));
 }

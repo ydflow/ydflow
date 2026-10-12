@@ -1,0 +1,15 @@
+{
+  "name": "ydflow-profile-artwork",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "test": "node --test scripts/*.test.mjs",
+    "render:activity": "node scripts/render-activity.mjs",
+    "update:activity": "node scripts/update-repository-activity.mjs"
+  },
+  "engines": { "node": ">=22" },
+  "dependencies": {
+    "@resvg/resvg-js": "2.6.2",
+    "gifenc": "1.0.3"
+  }
+}

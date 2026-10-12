@@ -1,6 +1,6 @@
 import { test } from 'node:test';
 import assert from 'node:assert/strict';
-import { queries, recentRepositories, repositoryTotals, renderTable, replaceActivity } from './update-repository-activity.mjs';
+import { queries, recentRepositories, repositoryTotals, renderTable, replaceActivity, renderActivityMarkdown } from './update-repository-activity.mjs';
 
 const pr = (repository, created, merged = null, updated = created) => ({
   repository_url: `https://api.github.com/repos/${repository}`,
@@ -58,6 +58,13 @@ test('an older PR establishes participation for a repo with a recent direct comm
   assert.deepEqual(await recentRepositories(search, 'ydflow', 2), ['upstream/old-pr', 'ydflow/a']);
 });
 
+test('ITOps remains excluded even when it is the newest authored PR and commit', async () => {
+  const search = async (endpoint, query) => endpoint === 'commits' ? result([
+    { repository: { full_name: 'qinshihu/itops-agent-platform' }, commit: { author: { date: '2026-10-13' } } },
+  ]) : result(query.includes('is:merged') ? [] : [pr('qinshihu/itops-agent-platform', '2026-10-13'), pr('owner/kept', '2026-10-12')]);
+  assert.deepEqual(await recentRepositories(search, 'ydflow'), ['owner/kept']);
+});
+
 test('uses lifetime counts including more than 1000 commits and distinguishes closed from merged PRs', async () => {
   const search = async (endpoint, query) => {
     assert.equal(/created:|merged:|author-date:/.test(query), false);
@@ -84,4 +91,13 @@ test('table links to auditable lifetime searches and states the default-branch c
   assert.match(table, /默认分支/);
   assert.match(table, /\[3\].*is%3Amerged/);
   assert.equal(table.includes('30'), false);
+});
+
+test('responsive artwork offers static reduced-motion alternatives and collapsed clickable evidence', () => {
+  const markdown = renderActivityMarkdown([{ repository: 'owner/a', commits: 10, opened: 4, merged: 3 }], 'ydflow');
+  assert.match(markdown, /max-width: 640px.*mobile\.gif/);
+  assert.match(markdown, /prefers-reduced-motion: reduce.*desktop\.png/);
+  assert.match(markdown, /<details>\n<summary>/);
+  assert.match(markdown, /\[3\].*is%3Amerged/);
+  assert.throws(() => renderActivityMarkdown([{ repository: 'qinshihu/itops-agent-platform' }], 'ydflow'), /excluded/);
 });

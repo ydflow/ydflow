@@ -21,8 +21,11 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: '22'
+          cache: npm
+      - name: Install artwork renderer
+        run: npm ci --no-audit --no-fund
       - name: Validate repository activity updater
-        run: node --test scripts/repository-activity.test.mjs
+        run: npm test
       - name: Summarize lifetime repository contributions
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
@@ -30,13 +33,13 @@ jobs:
         run: node scripts/update-repository-activity.mjs
       - name: Commit repository contribution summary
         run: |
-          if git diff --quiet -- README.md; then
+          if git diff --quiet -- README.md assets/activity; then
             echo "No repository contribution changes"
             exit 0
           fi
           git config user.name 'github-actions[bot]'
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
-          git add -- README.md
+          git add -- README.md assets/activity
           git commit -m 'chore: update repository contribution summary'
           git pull --rebase origin master
           git push origin HEAD:master
