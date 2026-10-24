@@ -49,7 +49,7 @@
 
 - **[Trail · 研迹（正式版）](https://github.com/ydflow/Trail)** — 已发布 Windows Beta 安装版与便携版的本地优先 AI 投资研究工作台；整合行情与 K 线、Agent 深度研究、证据溯源和投资逻辑复核，并以持久会话、断点恢复和离线评测检验研究流程。[![M8ven Verified](https://m8ven.ai/badge/mcp/ydflow-pi-native-crm-18xtoi?variant=verified&v=c334140390afdc95a4f966bb79065c7a)](https://m8ven.ai/mcp/ydflow-pi-native-crm-18xtoi?s=readme)
 - **[Pi Native CRM · Agent 原生 CRM](https://github.com/ydflow/pi-native-crm)** — 团队内部研发的 CRM 工作台；作为核心开发者之一，负责 Agent 受控执行链路，包括 CRM 工具授权、Pi/Harness 运行、持久 Worker 恢复及证据与 Eval 核验，使业务读写有边界、可追溯。
-- **[研迹 · ResearchTrail（先行版）](https://github.com/ydflow/research-trail)** — 已发布 Windows v1.0.0 的本地 AI 投资研究工作台；使用py架构并且接入离线pi loop架构比较两者区别 供自己学习比较，为研迹正式版开发做功能先行如接入热力图等稳定测试。
+- **[研迹 · ResearchTrail（先行版）](https://github.com/ydflow/research-trail)** — 已发布 Windows v1.0.0 的本地 AI 投资研究工作台；使用py agent架构并且接入离线pi-agent-core架构比较两者的区别 供自己学习与深层次理解，接入热力图等测试功能，为研迹正式版开发做测试。
 - **[故障智巡 · Incident Response Agent](https://github.com/ydflow/incident-response-agent)** — 线上服务故障调查与模拟处置平台；在本地受控演示中只读取证、引用证据诊断，通过审批门控与事件回放记录决策；尚未接入生产处置。
 - **[剪映自动化 Skill · Reliable Edition](https://github.com/ydflow/jianying-editor-skill-reliable)** — 在 [上游项目](https://github.com/luoluoluo22/jianying-editor-skill) 基础上的可靠性增强：草稿备份、只读诊断、版本预检、媒体保真与真实 MP4 转码。
 - **[AI Digital Human](https://github.com/ydflow/cyber-girlfriend-16gb)** — 支持自定义角色的逐轮语音数字人原型；串联云端语音与对话服务、本地口型和表情视频生成。
