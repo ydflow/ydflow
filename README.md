@@ -42,6 +42,8 @@
 - **并发持久化 · [TeamAI #841](https://github.com/Tencent/teamai-cli/pull/841) / [#855](https://github.com/Tencent/teamai-cli/pull/855) / [#961](https://github.com/Tencent/teamai-cli/pull/961)** — 为事件日志、状态与索引、跨进程会话日志补上锁协调和原子替换，处理竞争覆盖与截断读取。
 - **知识召回 · [TeamAI #891](https://github.com/Tencent/teamai-cli/pull/891) / [#902](https://github.com/Tencent/teamai-cli/pull/902) / [OpenViking #5312](https://github.com/volcengine/OpenViking/pull/5312)** — 统一多来源召回的排序尺度、隔离知识域 IDF 统计，并接通 DSH 插件的召回子树排除配置。
 - **Agent 运行时 · [AgentScope #2860](https://github.com/agentscope-ai/agentscope/pull/2860) / [Shep #883](https://github.com/shep-ai/shep/pull/883)** — 验证重试时保留多模态目标块；MCP 服务关闭时等待退出、超时升级终止，并处理 Windows 进程树。
+- **MCP 工具可靠性 · [AgentScope #3389](https://github.com/agentscope-ai/agentscope/pull/3389) / [Open Code Review #1770](https://github.com/alibaba/open-code-review/pull/1770)** — 保留仅含结构化内容的工具结果，并完整读取分页的工具清单，避免 Agent 收到空结果或漏掉可用工具。
+- **沙箱 API 分页 · [CubeSandbox #1830](https://github.com/TencentCloud/CubeSandbox/pull/1830)** — 为沙箱列表补上游标分页，并同步 Python、Node、Go SDK 与 Web 前端，避免客户端只读到第一页。
 
 ## 项目实践
 
