@@ -38,11 +38,13 @@
 
 ## 上游贡献 · 已合并
 
-- **执行边界 · [AgentScope #2883](https://github.com/agentscope-ai/agentscope/pull/2883) / [TeamAI #951](https://github.com/Tencent/teamai-cli/pull/951)** — 收紧 Bash 只读判定，阻止可写 Git 命令绕过权限流程；让 `update --dry-run` 只检查版本，不安装或写入检查状态。
-- **并发持久化 · [TeamAI #841](https://github.com/Tencent/teamai-cli/pull/841) / [#855](https://github.com/Tencent/teamai-cli/pull/855) / [#961](https://github.com/Tencent/teamai-cli/pull/961)** — 为事件日志、状态与索引、跨进程会话日志补上锁协调和原子替换，处理竞争覆盖与截断读取。
+- **权限与数据边界 · [AgentScope #2883](https://github.com/agentscope-ai/agentscope/pull/2883) / [WeKnora #4773](https://github.com/Tencent/WeKnora/pull/4773) / [TeamAI #1425](https://github.com/Tencent/teamai-cli/pull/1425)** — 修复可写 Git 命令的只读误判、非法知识库参数导致的检索范围扩大，以及符号链接让生成文件写出目标目录的问题。
+- **长任务上下文 · [WeKnora #4672](https://github.com/Tencent/WeKnora/pull/4672) / [#4681](https://github.com/Tencent/WeKnora/pull/4681)** — 修正上下文溢出恢复时压缩错误历史、截断摘要仍被接受的问题，保住后续轮次需要的真实对话。
 - **知识召回 · [TeamAI #891](https://github.com/Tencent/teamai-cli/pull/891) / [#902](https://github.com/Tencent/teamai-cli/pull/902) / [OpenViking #5312](https://github.com/volcengine/OpenViking/pull/5312)** — 统一多来源召回的排序尺度、隔离知识域 IDF 统计，并接通 DSH 插件的召回子树排除配置。
-- **Agent 运行时 · [AgentScope #2860](https://github.com/agentscope-ai/agentscope/pull/2860) / [Shep #883](https://github.com/shep-ai/shep/pull/883)** — 验证重试时保留多模态目标块；MCP 服务关闭时等待退出、超时升级终止，并处理 Windows 进程树。
-- **MCP 工具可靠性 · [AgentScope #3389](https://github.com/agentscope-ai/agentscope/pull/3389) / [Open Code Review #1770](https://github.com/alibaba/open-code-review/pull/1770)** — 保留仅含结构化内容的工具结果，并完整读取分页的工具清单，避免 Agent 收到空结果或漏掉可用工具。
+- **MCP 工具契约 · [AgentScope #3389](https://github.com/agentscope-ai/agentscope/pull/3389) / [Open Code Review #1770](https://github.com/alibaba/open-code-review/pull/1770)** — 保留仅含结构化内容的工具结果，完整读取分页的工具清单，避免 Agent 收到空结果或漏掉可用工具。
+- **工具结果反馈 · [WeKnora #4766](https://github.com/Tencent/WeKnora/pull/4766) / [TeamAI #1439](https://github.com/Tencent/teamai-cli/pull/1439) / [Open Code Review #1773](https://github.com/alibaba/open-code-review/pull/1773)** — 保留模型拒绝文本，并让 MCP 配置未完成、评论批次全被丢弃时明确报错，不把失败说成成功。
+- **并发与持久化 · [WeKnora #4755](https://github.com/Tencent/WeKnora/pull/4755) / [TeamAI #961](https://github.com/Tencent/teamai-cli/pull/961)** — 阻止迟到心跳恢复已释放的模型并发租约，并用锁与原子替换避免跨进程会话日志互相覆盖。
+- **Windows Hook 兼容 · [TeamAI #1451](https://github.com/Tencent/teamai-cli/pull/1451)** — 修复 CodeBuddy 内置 Hook 在 Windows IDE 的 cmd.exe 下静默失效，同时兼容 Git Bash 执行路径。
 - **沙箱 API 分页 · [CubeSandbox #1830](https://github.com/TencentCloud/CubeSandbox/pull/1830)** — 为沙箱列表补上游标分页，并同步 Python、Node、Go SDK 与 Web 前端，避免客户端只读到第一页。
 
 ## 项目实践
