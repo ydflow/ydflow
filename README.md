@@ -16,7 +16,7 @@
 
 你好，我是 **ydflow**，一名 **2028 届本科生**，目前正在寻找 **AI Agent 开发相关实习**。
 
-我关注 **Agent Memory、评测与自进化 Agent**：记忆如何可靠写入、召回和更新，失败如何通过 Trace / Eval 复现，反馈如何证明下一轮行动确实更好。我在个人项目和已合并的上游 PR 中实践记忆召回、离线评测与执行可靠性，也持续跟进 RSI 的研究进展。在项目[Trail · 研迹（正式版）](https://github.com/ydflow/Trail)与[研迹 · ResearchTrail（先行版）](https://github.com/ydflow/research-trail)中，我已接入并探索双 Harness 架构，通过比较不同执行路径，为后续研究基于评测反馈的递归自我改进做准备。
+我关注 **Agent Memory、评测与自进化 Agent**：记忆如何可靠写入、召回和更新，失败如何通过 Trace / Eval 复现，反馈如何证明下一轮行动确实更好。我在个人项目和已合并的上游 PR 中实践记忆召回、离线评测与执行可靠性，也持续跟进 RSI 的研究进展。在项目 [Trail · 研迹（正式版）](https://github.com/ydflow/Trail) 与 [研迹 · ResearchTrail（先行版）](https://github.com/ydflow/research-trail) 中，我已接入并探索双 Harness 架构，通过比较不同执行路径，为后续研究基于评测反馈的递归自我改进做准备。近期，我也在研究 **CMA-ES 与离散组合搜索**，探索如何生成候选策略、利用评测反馈调整搜索，并验证每轮改进是否有效。
 
 我也探索 **AI 数字人**的交互与记忆表达，并将金融研究兴趣落实在本地 AI 投资研究工作台「研迹」。欢迎通过 [邮箱](mailto:m5a5@163.com) 交流。
 
