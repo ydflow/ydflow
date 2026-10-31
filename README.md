@@ -46,21 +46,32 @@
 
 ## 🔧 上游贡献 · 已合并
 
-🛡️ **权限与安全**<br>
-修复工具权限误判、知识库检索范围扩大和文件写入边界问题。<br>
-[AgentScope #2883](https://github.com/agentscope-ai/agentscope/pull/2883) · [WeKnora #4773](https://github.com/Tencent/WeKnora/pull/4773) · [TeamAI #1425](https://github.com/Tencent/teamai-cli/pull/1425)
-
-🧠 **上下文与记忆**<br>
-处理长任务上下文压缩中的对话丢失和摘要截断，并改进知识召回。<br>
-[WeKnora #4672](https://github.com/Tencent/WeKnora/pull/4672) · [#4681](https://github.com/Tencent/WeKnora/pull/4681) · [TeamAI #891](https://github.com/Tencent/teamai-cli/pull/891)
-
-🔌 **MCP 与工具调用**<br>
-保留结构化工具结果，修复分页工具清单遗漏及工具执行的错误反馈。<br>
-[AgentScope #3389](https://github.com/agentscope-ai/agentscope/pull/3389) · [Open Code Review #1770](https://github.com/alibaba/open-code-review/pull/1770) · [TeamAI #1439](https://github.com/Tencent/teamai-cli/pull/1439)
-
-⚙️ **并发与持久化**<br>
-修复模型并发租约竞争，以及跨进程会话日志相互覆盖的问题。<br>
-[WeKnora #4755](https://github.com/Tencent/WeKnora/pull/4755) · [TeamAI #961](https://github.com/Tencent/teamai-cli/pull/961)
+<table width="100%">
+  <tr>
+    <td width="50%" valign="top">
+      🛡️ <strong>权限与安全</strong><br>
+      修复工具权限误判、知识库检索范围扩大和文件写入边界问题。<br>
+      <a href="https://github.com/agentscope-ai/agentscope/pull/2883">AgentScope #2883</a> · <a href="https://github.com/Tencent/WeKnora/pull/4773">WeKnora #4773</a> · <a href="https://github.com/Tencent/teamai-cli/pull/1425">TeamAI #1425</a>
+    </td>
+    <td width="50%" valign="top">
+      🧠 <strong>上下文与记忆</strong><br>
+      处理长任务上下文压缩中的对话丢失和摘要截断，并改进知识召回。<br>
+      <a href="https://github.com/Tencent/WeKnora/pull/4672">WeKnora #4672</a> · <a href="https://github.com/Tencent/WeKnora/pull/4681">#4681</a> · <a href="https://github.com/Tencent/teamai-cli/pull/891">TeamAI #891</a>
+    </td>
+  </tr>
+  <tr>
+    <td width="50%" valign="top">
+      🔌 <strong>MCP 与工具调用</strong><br>
+      保留结构化工具结果，修复分页工具清单遗漏及工具执行的错误反馈。<br>
+      <a href="https://github.com/agentscope-ai/agentscope/pull/3389">AgentScope #3389</a> · <a href="https://github.com/alibaba/open-code-review/pull/1770">Open Code Review #1770</a> · <a href="https://github.com/Tencent/teamai-cli/pull/1439">TeamAI #1439</a>
+    </td>
+    <td width="50%" valign="top">
+      ⚙️ <strong>并发与持久化</strong><br>
+      修复模型并发租约竞争，以及跨进程会话日志相互覆盖的问题。<br>
+      <a href="https://github.com/Tencent/WeKnora/pull/4755">WeKnora #4755</a> · <a href="https://github.com/Tencent/teamai-cli/pull/961">TeamAI #961</a>
+    </td>
+  </tr>
+</table>
 
 <details>
 <summary>查看更多已合并的上游贡献</summary>
