@@ -20,9 +20,11 @@
 
 我也探索 **AI 数字人**的交互与记忆表达，并将金融研究兴趣落实在本地 AI 投资研究工作台「研迹」。欢迎通过 [邮箱](mailto:m5a5@163.com) 交流。
 
-## 📊 开源贡献总览
+🌱 我也持续参与开源协作，在 Agent 工程实践中打磨可靠性与工具链。
 
-[![已合并上游 PR：111](https://img.shields.io/badge/upstream_PRs_merged-111-2ea44f?style=for-the-badge)](https://github.com/search?q=is%3Apr+author%3Aydflow+is%3Amerged+-user%3Aydflow+is%3Apublic&type=pullrequests)　 **10 个上游仓库** · **[55 个 PR 开放中](https://github.com/search?q=is%3Apr+author%3Aydflow+is%3Aopen+-user%3Aydflow+is%3Apublic&type=pullrequests)**
+[![已合并 PR：111](https://img.shields.io/badge/MERGED%20PRs-111-2ea44f?style=for-the-badge&labelColor=25364a&logo=github&logoColor=white)](https://github.com/search?q=is%3Apr+author%3Aydflow+is%3Amerged+-user%3Aydflow+is%3Apublic&type=pullrequests)
+[![上游仓库：10](https://img.shields.io/badge/UPSTREAM%20REPOS-10-397ac4?style=for-the-badge&labelColor=25364a&logo=github&logoColor=white)](https://github.com/search?q=is%3Apr+author%3Aydflow+is%3Amerged+-user%3Aydflow+is%3Apublic&type=pullrequests)
+[![开放中 PR：55](https://img.shields.io/badge/OPEN%20PRs-55-168b83?style=for-the-badge&labelColor=25364a&logo=github&logoColor=white)](https://github.com/search?q=is%3Apr+author%3Aydflow+is%3Aopen+-user%3Aydflow+is%3Apublic&type=pullrequests)
 
 腾讯 **83** · 阿里 **4** · 字节 **2** · AI 开源社区 **22**　<sub>截至 2026-10-31 · 公开上游仓库</sub>
 
