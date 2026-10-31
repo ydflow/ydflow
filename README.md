@@ -62,7 +62,7 @@
   <tr>
     <td width="50%" valign="top">
       🔌 <strong>MCP 与工具调用</strong><br>
-      保留结构化工具结果，修复分页工具清单遗漏及工具执行的错误反馈。<br>
+      保留结构化工具结果，修复分页工具清单遗漏工具执行的错误反馈<br>
       <a href="https://github.com/agentscope-ai/agentscope/pull/3389">AgentScope #3389</a> · <a href="https://github.com/alibaba/open-code-review/pull/1770">Open Code Review #1770</a> · <a href="https://github.com/Tencent/teamai-cli/pull/1439">TeamAI #1439</a>
     </td>
     <td width="50%" valign="top">
