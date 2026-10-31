@@ -22,7 +22,8 @@
 
 ## 📊 开源贡献总览
 
-**[111 个 PR 已合并](https://github.com/search?q=is%3Apr+author%3Aydflow+is%3Amerged+-user%3Aydflow+is%3Apublic&type=pullrequests) · 10 个上游仓库 · [55 个 PR 开放中](https://github.com/search?q=is%3Apr+author%3Aydflow+is%3Aopen+-user%3Aydflow+is%3Apublic&type=pullrequests)**腾讯 **83** · 阿里 **4** · 字节 **2** · AI 开源社区 **22**
+[111 个 PR 已合并](https://github.com/search?q=is%3Apr+author%3Aydflow+is%3Amerged+-user%3Aydflow+is%3Apublic&type=pullrequests) · 10 个上游仓库 · [55 个 PR 开放中](https://github.com/search?q=is%3Apr+author%3Aydflow+is%3Aopen+-user%3Aydflow+is%3Apublic&type=pullrequests)**腾讯 **83** · 阿里 **4** · 字节 **2** · AI 开源社区 **22**
+
 参与 WeKnora、TeamAI CLI、AgentScope、OpenViking 等项目，关注 Agent 可靠性、上下文、知识召回与工具协议。
 
 [![已合并上游 PR：111](https://img.shields.io/badge/upstream_PRs_merged-111-2ea44f?style=for-the-badge)](https://github.com/search?q=is%3Apr+author%3Aydflow+is%3Amerged+-user%3Aydflow+is%3Apublic&type=pullrequests)
