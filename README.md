@@ -35,9 +35,7 @@
 </p>
 
 ---
-**111 个 PR 已合并进 10 个上游仓库** · 腾讯 83(WeKnora / teamai-cli / CubeSandbox)
-· 阿里 4 · 字节 2 · AI 社区 22 · 另有 54 个 PR 在审
-[![merged](https://img.shields.io/badge/upstream_PRs_merged-111-2ea44f?style=for-the-badge)](https://github.com/search?q=type%3Apr+author%3Aydflow+is%3Amerged)
+
 ## 上游贡献 · 已合并
 
 - **权限与数据边界 · [AgentScope #2883](https://github.com/agentscope-ai/agentscope/pull/2883) / [WeKnora #4773](https://github.com/Tencent/WeKnora/pull/4773) / [TeamAI #1425](https://github.com/Tencent/teamai-cli/pull/1425)** — 修复可写 Git 命令的只读误判、非法知识库参数导致的检索范围扩大，以及符号链接让生成文件写出目标目录的问题。
